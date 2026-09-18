@@ -87,3 +87,9 @@
             System.out.println("APROVADO");
     }
     }
+
+## Aula 5 - Organizando arquivos
+
+    À medida que nosso sistema vai evoluindo, surgem novos arquivos (código fonte) em nossa estrutura de arquivos do projeto. Isso exige que seja realizado uma organização destes arquivos através de pacotes (packages).
+
+
