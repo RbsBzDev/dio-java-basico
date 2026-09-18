@@ -93,3 +93,35 @@
     À medida que nosso sistema vai evoluindo, surgem novos arquivos (código fonte) em nossa estrutura de arquivos do projeto. Isso exige que seja realizado uma organização destes arquivos através de pacotes (packages).
 
 
+## Aula 6 - Java Beans
+
+Umas das maiores dificuldades na programação é escrever algoritmos legíveis a níveis que sejam compreendidos por todo seu time ou por você mesmo no futuro. Para isso a linguagem Java sugere, através de convenções, formas de escrita universal para nossas classes, atributos, métodos e pacotes.
+
+    Variáveis
+Mais cedo já aprendemos algumas regras de declaração de variáveis, mais agora iremos conhecer algumas sugestões de nomemclatura:
+    Uma variável deve ser clara, sem abreviações ou definição sem sentido;
+    Uma variável é smepre no singular, exceto quando se referir a um array ou coleção;
+    Defina um idioma único para suas variáveis. Se você for declarar variáveis em inglês, defina todas em inglês.
+    
+##  Não recomendado:
+
+    double salMedio = 1500.23 // variável abreviada
+    String emails = "aluno@escola.com" // variavel no plural e objeto se refere a 1;
+    String myName = "JOSEPH" // idiomas diferentes
+
+ ##  Recomandado:
+
+    double salarioMedio = 1500.23;
+    String email = "aluno@escola.com";
+    String [] emails = {"aluno@escola.com","professor@escola.com"} // array de emails, no plural
+    String meuNome = "JOSEPH";
+
+## Métodos
+    Os métodos deverão ser nomeados como verbos, através de uma mistura de letras minúsculas e maiúsculas. Em princípio todas as letras que compõem o nome devem ser mantidas em mnúsculo, com excesão da primeira letra de cada palavra composta a partir da segunda palavra;
+
+##    Exemplos sugeridos para nomenclatura de métodos:
+    somar (int n1, intn2){}
+    abrirConexao(){}
+    concluirProcessamento(){}
+    findById(int id){} 
+    calcularImprimir(){}
