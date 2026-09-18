@@ -9,7 +9,7 @@
         // SEU CÓDIGO AQUI
     }
     
-# Aula 2 - Padrão de nomemclatura
+## Aula 2 - Padrão de nomemclatura
 
     Quando se trata de escrever códigos na linguagem Java, é recomendado seguir algumas convenções de escrita. Esses padrões estão expressos nos itens abaixo:
 
@@ -32,3 +32,58 @@
         double PI = 3.14
         int ESTADOS_BRASILEIRO = 27
         int ANO_2000 = 2000
+
+## Aula 3 - Declarando variáveis e métodos
+
+    Como identificar entre declaração de variáveis e métodos em nosso programa? Existe uma estrutura comum para ambas as finalidades, exemplo:
+
+    # Declarar uma variável em Java segue sempre a seguinte estrutura:
+
+    // Estrutura
+    Tipo NomeBemDefinido = Atribuição (opcional em alguns casos)
+    // Exemplo:
+    int idade = 23;
+    double altura = 1.62;
+    Dog spike; // observe que aqui a variável spike não tem valor é 
+
+    # Declarando métodos em Java segue uma estrutura bem simples:
+    
+    // Estrutura
+    TipoRetorno NomeOjetivoNoInfinitivo Parametro(s)
+    //Exemplo
+    int somar (int numeroUm, int numero2);
+    
+    String formatarCep (long cep);
+
+## Aula 4 - Identação
+
+    Basicamente indentar é um termo utilizado para escrever o código do programa de forma hierárquica, facilitando assim a visualização e o entendimento do programa.
+    Abaixo, veja um exemplo de um algoritmo de validação de aprovação de estudante. Em uma aba, temos um código sem identação nenhuma, e na outra, temos o mesmo código seguindo um padrão de identação. Observe como é muito mais fácil entender a hierarquia do código na segunda aba.
+
+    ## Sem identação
+    //arquivo BoletimEstudantil.java
+    public class BoletimEstudantil{
+    public static void main(String [] args) {
+    int mediaFinal = 6; 
+    if(mediaFinal<6)
+    System.out.println("REPROVADO");
+    else if(mediaFinal==6)
+    System.out.println("PROVA MINERVA");
+    else
+    System.out.println("APROVADO");
+    }
+    }
+
+    ## Com identação
+    //arquivo BoletimEstudantil.java
+    public class BoletimEstudantil{
+        public static void main(String [] args) {
+         int mediaFinal = 6; 
+         if(mediaFinal<6)
+            System.out.println("REPROVADO");
+         else if(mediaFinal==6)
+            System.out.println("PROVA MINERVA");
+         else
+            System.out.println("APROVADO");
+    }
+    }
